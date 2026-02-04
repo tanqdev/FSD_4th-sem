@@ -7,5 +7,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body></body>
-  <script src="script.js"></script>
+  <script>
+    let a = 20;
+    let bool = true;
+    let und;
+    let nul = null;
+    console.log(typeof a);
+
+    let arr = [1, 2, 3, 4];
+    console.log(arr[1]);
+    arr.pop();
+    arr.push(8);
+    for (let a of arr) {
+      console.log(a);
+    }
+
+    //Arrow function
+    const multiply = (p, q) => p * q;
+    console.log("arrow function", multiply(5, 10));
+
+    //Date
+    let today = new Date();
+    console.log(today.getFullYear());
+
+    //Math
+    console.log(Math.sqrt(9));
+    console.log(Math.floor(Math.random() * 10));
+
+    //type conversion
+    let strnum = "1221";
+    let convert = Number(strnum);
+    console.log(convert / 11);
+  </script>
 </html>
