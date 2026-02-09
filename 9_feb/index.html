@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="text">Show</p>
+    <button onclick="toggleText()" id="button">Hide</button>
+  </body>
+  <script>
+    function toggleText() {
+      let t = document.getElementById("text");
+      let b = document.getElementById("button");
+      if (t.style.display == "none") {
+        t.style.display = "block";
+        b.innerHTML = "Hide";
+      } else {
+        t.style.display = "none";
+        b.innerHTML = "Show";
+      }
+    }
+  </script>
+</html>

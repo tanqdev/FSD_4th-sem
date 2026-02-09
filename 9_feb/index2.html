@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="n1" placeholder="Enter number 1" />
+    <input type="number" id="n2" placeholder="Enter number 2" />
+
+    <button onClick="addNums()">Add</button>
+    <p id="ans"></p>
+  </body>
+  <script>
+    function addNums() {
+      let a = document.getElementById("n1").value;
+      let b = document.getElementById("n2").value;
+      document.getElementById("ans").innerHTML = Number(a) + Number(b);
+    }
+  </script>
+</html>
